@@ -74,7 +74,9 @@ public class TriangleActivity extends Activity{
     }
 
 
-    // load libGLESNative.so since it has all the native functions
+    /**
+     * load libTriangleNative.so since it has all the native functions
+     */
     static {
         System.loadLibrary("TriangleNative");
     }

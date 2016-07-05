@@ -44,7 +44,7 @@ class MyGLSurfaceView extends GLSurfaceView {
         } catch (Exception e) {
 
             // Trouble, something's wrong!
-            Log.e("GLESNativeAndroid", "Unable to create GLES context!", e);
+            Log.e("MyGLSurfaceView", "Unable to create GLES context!", e);
 
         }
 

@@ -33,7 +33,7 @@ class MyGLRenderer implements GLSurfaceView.Renderer {
 
         // called when the surface is created or recreated
         // create (or recreate) native objects that are required for rendering
-        Log.d("GLES", "onSurfaceCreated");
+        Log.d("MyGLRenderer", "onSurfaceCreated");
         SurfaceCreatedNative();
 
     }
@@ -51,7 +51,7 @@ class MyGLRenderer implements GLSurfaceView.Renderer {
         // called after surface is created and GLES surface changes size
         // this can typically happen if device orientation changes
         // we need to set GLES viewport to handle the change in size
-        Log.d("GLES", "onSurfaceChanged");
+        Log.d("MyGLRenderer", "onSurfaceChanged");
         SurfaceChangedNative(width, height);
 
     }

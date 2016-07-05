@@ -22,7 +22,8 @@
  * Basic initializations for GL.
  */
 void MyGLInits() {
-    // Black background
+
+    // White background
     glClearColor(1.0f, 1.0f, 1.0f, 1.0f);
 
     MyLOGI("OpenGL %s, GLSL %s", glGetString(GL_VERSION), glGetString(GL_SHADING_LANGUAGE_VERSION));
