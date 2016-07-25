@@ -20,6 +20,6 @@
 #include <stdio.h>
 #include <string>
 
-std::string GetFileName(std::string file_name);
+std::string GetFileName(std::string fileName);
 
 #endif //MISC_H
