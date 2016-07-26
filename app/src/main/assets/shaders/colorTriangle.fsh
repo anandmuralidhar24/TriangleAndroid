@@ -14,6 +14,8 @@
  *    limitations under the License.
  */
 
+// shader associated with triangle.cpp
+
 varying vec3 fragmentColor; // this is interpolated across vertices
 
 void main()

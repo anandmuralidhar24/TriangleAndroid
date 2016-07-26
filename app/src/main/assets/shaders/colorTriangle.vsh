@@ -14,9 +14,15 @@
  *    limitations under the License.
  */
 
-varying vec3 fragmentColor; // this is interpolated across vertices
+// shader associated with triangle.cpp
+
+attribute   vec3 vertexPosition;
+attribute   vec3 vertexColor;
+varying     vec3 fragmentColor;     // this is 'sent' to the fragment shader
 
 void main()
 {
-	gl_FragColor.xyz = fragmentColor;
+    gl_Position.xyz = vertexPosition;
+    gl_Position.w   = 1.0;
+    fragmentColor   = vertexColor;
 }

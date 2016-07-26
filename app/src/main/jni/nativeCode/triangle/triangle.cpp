@@ -58,8 +58,8 @@ void Triangle::PerformGLInits() {
     glBufferData(GL_ARRAY_BUFFER, sizeof(colorBufferData), colorBufferData, GL_STATIC_DRAW);
 
     // shader related setup
-    std::string vertexShader    = "colorTriangle.vsh";
-    std::string fragmentShader  = "colorTriangle.fsh";
+    std::string vertexShader    = "shaders/colorTriangle.vsh";
+    std::string fragmentShader  = "shaders/colorTriangle.fsh";
 
     // compile the vertex and fragment shaders, and link them together
     shaderProgramID = LoadShaders(vertexShader, fragmentShader);
