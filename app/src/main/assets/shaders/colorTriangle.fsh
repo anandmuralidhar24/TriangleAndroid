@@ -15,6 +15,7 @@
  */
 
 // shader associated with triangle.cpp
+precision mediump float; // needs to be specified for GLSL 100
 
 varying vec3 fragmentColor; // this is interpolated across vertices
 
